@@ -1,4 +1,4 @@
-pipelineJob('theme-park-job') {
+pipelineJob('airforce-job-aws') {
     definition {
         cpsScm {
             scm {
@@ -7,6 +7,7 @@ pipelineJob('theme-park-job') {
                         url 'https://github.com/rthirumal1999/airforce-sample.git'
                     }
                     branch 'master'
+                    scriptPath('Jenkinsfile-aws')
                 }
             }
         }
