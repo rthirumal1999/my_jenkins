@@ -1,13 +1,13 @@
-pipelineJob('airforce-job-aws') {
+pipelineJob('kudos-backend') {
     definition {
         cpsScm {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/rthirumal1999/airforce-sample.git'
+                        url 'https://github.com/shekarpendem/kudos-backend.git'
                     }
                     branch 'master'
-                    scriptPath('Jenkinsfile-aws')
+                    scriptPath('Jenkinsfile')
                 }
             }
         }
